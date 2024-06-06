@@ -8,7 +8,7 @@ describe('GigListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GigListComponent]
+      declarations: [GigListComponent]
     })
     .compileComponents();
     

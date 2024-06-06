@@ -8,7 +8,7 @@ describe('InboxComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InboxComponent]
+      declarations: [InboxComponent]
     })
     .compileComponents();
     

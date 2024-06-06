@@ -1,0 +1,204 @@
+.logo {
+    margin-right: 7rem;
+}
+
+#login:hover {
+    transition: all .3s ease-in-out;
+    color: #fff;
+    outline: none;
+    background-color: #55bc7d;
+}
+
+/* 
+.sign .btn{
+    border-radius: 5rem;
+} */
+
+#signup {
+    background-color: #55bc7d;
+}
+
+#signup:hover {
+    transition: all .3s ease-in-out;
+    color: #fff;
+    outline: none;
+    background-color: #55bc7c66;
+}
+
+.navbar a {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.navbar a:hover {
+    color: #55bc7d;
+    transition: all.3s ease-in-out;
+}
+
+#hero {
+    height: 100vh;
+    background-color: #445a53;
+}
+
+#logo {
+    color: #55bc7d;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+#logo span {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+/* Center the navbar content on small screens */
+/* src/styles.css or your custom CSS file */
+@media (max-width: 992px) {
+
+    /* Fullscreen overlay menu styles */
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(15, 34, 22, 0.74);
+        /* Semi-transparent background */
+        z-index: 1;
+        /* Ensure it covers other content */
+        display: none;
+        /* Hide by default */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+        justify-content: center;
+        /* Center items vertically */
+        text-align: center;
+    }
+
+    .navbar-collapse.show {
+        display: flex;
+        /* Show when toggled */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        /* Add space between items */
+    }
+
+    .nav-link {
+        color: #fff;
+        /* White text */
+        font-size: 24px;
+        /* Larger text size */
+        padding: 10px;
+    }
+
+    .sign {
+        margin-bottom: 3rem;
+    }
+
+    #toggler {
+        color: #fff;
+        z-index: 9999;
+        outline: #fff;
+        border: 1px solid #fff;
+    }
+}
+
+#hero-img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero-text h1 {
+    font-weight: 800;
+    font-size: 3.8rem;
+    color: #fff;
+}
+
+.hero-text p {
+    color: #bbb;
+}
+
+#muted {
+    font-size: .9rem;
+    color: #bbb;
+}
+
+#muted .jobs-badge {
+    background-color: #55bc7d;
+    color: #fff;
+    padding: .3rem .6rem;
+    font-size: .8rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+
+.text-right {
+    text-align: right;
+    height: calc(100vh - 90px);
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search-form{
+    background-color: #fff;
+    border-radius: .7rem;
+    padding: 1rem;
+    padding-left: .7rem;
+    position: relative;
+}
+
+#search-input {
+    outline: none;
+    flex-grow: 1; /* Allow input to take the remaining space */
+    padding-right: 3rem;
+    border: none;
+    box-shadow: none;
+    width: 90%;
+}
+
+#search-input:focus {
+    padding-right: 2.5rem;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+#search-btn {
+    position: absolute;
+    right: .6rem;
+    top: .55rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: #55bc7d;
+}

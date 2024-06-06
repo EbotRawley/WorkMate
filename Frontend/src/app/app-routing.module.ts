@@ -11,21 +11,29 @@ import { CreateJobComponent } from './jobs/create-job/create-job.component';
 import { GigListComponent } from './gigs/gig-list/gig-list.component';
 import { GigDetailComponent } from './gigs/gig-detail/gig-detail.component';
 import { CreateGigComponent } from './gigs/create-gig/create-gig.component';
+import { InboxComponent } from './messaging/inbox/inbox.component';
+import { MessageDetailComponent } from './messaging/message-detail/message-detail.component';
+import { SettingsComponent } from './settings/settings.component';
+import { AuthGuard } from './auth/auth.guard';
+import { AuthReverseGuard } from './auth/auth-reverse.guard';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'signup', component: SignupComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'jobs', component: JobListComponent },
-  { path: 'jobs/:id', component: JobDetailComponent },
-  { path: 'create-job', component: CreateJobComponent },
-  { path: 'gigs', component: GigListComponent },
-  { path: 'gigs/:id', component: GigDetailComponent },
-  { path: 'create-gig', component: CreateGigComponent },
-  // Add more routes as needed
-  { path: '**', redirectTo: '' } // Redirect to home page for unknown paths
+  { path: 'login', component: LoginComponent, canActivate: [AuthReverseGuard] },
+  { path: 'signup', component: SignupComponent, canActivate: [AuthReverseGuard] },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
+  { path: 'jobs', component: JobListComponent, canActivate: [AuthGuard] },
+  { path: 'jobs/:id', component: JobDetailComponent, canActivate: [AuthGuard] },
+  { path: 'create-job', component: CreateJobComponent, canActivate: [AuthGuard] },
+  { path: 'gigs', component: GigListComponent, canActivate: [AuthGuard] },
+  { path: 'gigs/:id', component: GigDetailComponent, canActivate: [AuthGuard] },
+  { path: 'create-gig', component: CreateGigComponent, canActivate: [AuthGuard] },
+  { path: 'inbox', component: InboxComponent, canActivate: [AuthGuard] },
+  { path: 'message/:id', component: MessageDetailComponent, canActivate: [AuthGuard] },
+  { path: 'settings', component: SettingsComponent, canActivate: [AuthGuard] },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

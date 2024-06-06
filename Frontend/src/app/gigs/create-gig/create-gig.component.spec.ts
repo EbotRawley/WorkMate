@@ -8,7 +8,7 @@ describe('CreateGigComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CreateGigComponent]
+      declarations: [CreateGigComponent]
     })
     .compileComponents();
     
