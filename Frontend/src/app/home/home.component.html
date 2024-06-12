@@ -7,11 +7,11 @@
                 </a>
             </div>
 
-            <button class="navbar-toggler ml-auto" id="toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <span class="toggler-icon fas fa-bars"></span> </button>
+                
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto">
@@ -68,6 +68,7 @@
         </div>
     </div>
 </section>
+
 <section id="how-it-works">
     <div class="container py-5 section2" style="position: relative;">
         <h2 class="text-center py-3">How It Works!</h2>
@@ -137,6 +138,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- Features Section -->
     <div class="features-section section3">
         <div class="container py-5">
@@ -207,10 +210,6 @@
 
 
 
-
-
-
-
 <!------------------------------------------->
 <!------------------------------------------->
 <!----------  Explore Jobs section ---------->
@@ -218,8 +217,9 @@
 <!------------------------------------------->
 <section id="explore-jobs" class="py-5">
     <div class="container py-3">
-        <h2 class="text-center py-2">Explore Jobs by Categories</h2>
-        <p class="text-center mb-4">Browse jobs by different categories that match your needs and skills.</p>
+        <h2 class="text-center py-3">Explore Jobs by Categories</h2>
+        <p class="text-center mb-4 feature-paragraph">Browse jobs by different categories that match your needs and
+            skills.</p>
         <div class="row mt-4 align">
             <div class="col-md-4 mb-4">
                 <div class="card category-card">
@@ -307,8 +307,133 @@
 </section>
 
 
+<!------------------------------------------->
+<!------------  FQA section -------------->
+<!------------------------------------------->
+<section id="faq" class="py-5" style="position: relative;">
+    <div class="faq-bg">
+        <i class="fa-regular fa-comment-dots"></i>
+    </div>
+    <div class="faq-bg2">
+        <i class="fa-solid fa-clipboard-question"></i>
+    </div>
+    <div class="container py-3">
+        <h2 class="text-center py-3">Frequently Asked Questions</h2>
+        <p class="text-center mb-4 feature-paragraph">Have questions? We have answers. Here are some of the most common
+            queries we receive.</p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is WorkMate?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>WorkMate</strong> is a platform that connects job seekers with employers across various
+                        categories, making it easy to find and apply for jobs that match your skills and interests.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I create an account?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Creating an account is simple. Click on the "Sign Up" button, fill in your details, and follow
+                        the instructions to verify your email address.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How do I apply for jobs?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Browse through the job listings, click on the job that interests you, and then click on the
+                        "Apply" button. Make sure your profile is complete for a better chance of being hired.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Is WorkMate free to use?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes, for now, WorkMate is free for job seekers. Employers may have to pay for premium features
+                        or to post job listings.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Do I need to do KYC ?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes, KYC (Know Your Customer) is required to use WorkMate. We ensure all our users are verified
+                        before they can use our platform. Businesses will have to be verified as well.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about-gigs" class="py-5" style="position: relative; overflow: hidden;">
+    <div class="ibg gig-ibg">
+        <i class="fa-solid fa-palette"></i>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 discover-gigs">
+                <h2 class="mb-4">Discover Exciting Gigs on WorkMate</h2>
+                <p>Looking for flexible work opportunities or short-term gigs? WorkMate's gigs section is the perfect
+                    place to find exciting projects suited to your skills and interests. </p>
+                <p> Whether you're a freelancer, a student looking for part-time work, or someone seeking additional
+                    income, we got you!</p>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center">
+                <img src="assets/images/work from home.png" alt="Gigs Image" class="img-fluid gigs-image">
+            </div>
+        </div>
+    </div>
+</section>
 
 
+<!------------------------------------------->
+<!------------  Employer CTA section -------------->
+<!------------------------------------------->
+<section id="employer-cta" class="py-5 bg-light">
+    <div class="container">
+        <div class="cont text-center container py-5">
+            <h2 class="py-3">Looking to hire someone ?</h2>
+            <p class="mb-4">Post your job opportunities and connect with talented individuals.</p>
+            <a href="#" class="btn btn-lg px-4 button-18">Post a Job</a>
+        </div>
+    </div>
+</section>
 
 
 <!------------------------------------------->
